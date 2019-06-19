@@ -12,8 +12,8 @@ client.on('message', message => {
      if (message.content === 'hai') {
     	message.reply('hai juga kak');
   	}
-    if (message.content === 'price') {
-		 var coin = content.replace("price ", "");
+    if (message.content === '.price') {
+		 var coin = content.replace(".price ", "");
 		 var value = '';
 		 try{
 			request('http://api.coinmarketcap.com/v1/ticker/' + coin + '/',
