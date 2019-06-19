@@ -33,6 +33,9 @@ client.on('message', message => {
 				}
 				});
 				}
+				catch (err) {
+				message.reply('Wrong ID, Have a Great Day');
+				}
   	}
 });
 
