@@ -20,7 +20,7 @@ client.on('message', message => {
 			request('http://api.coinmarketcap.com/v1/ticker/' + coin + '/',
 			function(error,res,body) {
 			var obj = JSON.parse(body);
-			console.log(obj[0]);
+			message.reply(obj[0]);
 			if(obj[0] === undefined)
 				{
 					message.reply('Wrong id');
