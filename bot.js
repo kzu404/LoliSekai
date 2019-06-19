@@ -13,7 +13,7 @@ client.on('message', message => {
     	message.reply('hai juga kak');
   	}
     if (message.content === 'price') {
-		 var coin = content.replace("$price ", "");
+		 var coin = content.replace("price ", "");
 		 var value = '';
 		 try{
 			request('http://api.coinmarketcap.com/v1/ticker/' + coin + '/',
