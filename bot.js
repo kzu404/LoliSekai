@@ -31,9 +31,7 @@ function processCommand(receivedMessage) {
         lvlCmd(arguments, receivedMessage)
     } else if (primaryCommand == "ping") {
         pingCmd(arguments, receivedMessage)
-    } else {
-        receivedMessage.channel.send("Perintah tidak di kenal silahkan ketik !help")
-    }
+    } 
 }
 
 function helpCmd(arguments, receivedMessage) {
