@@ -54,8 +54,8 @@ function lvlCmd(arguments, receivedMessage) {
 				console.log(counter['monster']);
 				value = "Leveling " + coin +
 				": MOB Name: " + counter['monster'] + "[" + counter['level'] + "], Map: " + counter['lokasi'];
-				receivedMessage.channel.send(value);
-			}
+				
+			}receivedMessage.channel.send(value);
 				}
 				);
 				}
