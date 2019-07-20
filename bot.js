@@ -52,10 +52,10 @@ function lvlCmd(arguments, receivedMessage) {
 				for (var i = 0; i < jsonData['data'].length; i++) {
 				var counter = jsonData['data'][i];
 				console.log(counter['monster']);
-				value = "Leveling " + coin +
-				": MOB Name: " + counter['monster'] + "[" + counter['level'] + "], Map: " + counter['lokasi'];
-				
-			}receivedMessage.channel.send(value);
+				value = "` Leveling " + coin +
+				": MOB Name: " + counter['monster'] + "[" + counter['level'] + "], Map: " + counter['lokasi']+"`";
+				receivedMessage.channel.send(value);
+			}
 				}
 				);
 				}
